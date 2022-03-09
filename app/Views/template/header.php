@@ -1,5 +1,5 @@
 <header class="header">
-        <a href="/">Logo</a>
+        <a href="/"><img src="<?php base_url() ?>/carro.png"   style="width: 4vw; height: auto;"></a>
         <nav>
             <ul class="menu">
                 <li><a href="/">Sobre</a></li>
