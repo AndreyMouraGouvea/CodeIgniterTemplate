@@ -3,22 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <title>Home</title>
-    <style>
-        * {
-            font-family:'Hubballi', cursive;
-        }
-        </style>
-    <!-- font-family: 'Hubballi', cursive; -->
+    <title>NAV BAR</title>
 </head>
 
 <body>
-    <h1 style="font-weight:bold">Home</h1>
-</body>
+    <style>
+        * {
+            font-family: 'Hubballi', cursive;
+        }
+        body,
+        ul,
+        li,
+        p {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-</html>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header {
+            /*espaço entre os itens */
+            /*tela pequena, flex-box vai para baixo*/
+            background-color: #7159c1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #7159c1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 30%;
+        }
+
+        .menu {
+            display: flex;
+
+        }
+
+        .menu li {
+            margin-left: 10px;
+
+        }
+
+        .menu li a {
+            /* para a não se mover */
+            display: block;
+            padding: 10px;
+        }
+    </style>
