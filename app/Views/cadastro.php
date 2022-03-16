@@ -129,7 +129,7 @@
 
 <section id="body">
     <div>
-        <form action="curriculo.php" method="POST" enctype="multipart/form-data">
+        <form action="home.php" method="POST" enctype="multipart/form-data">
             <label for="nome">Digite seu nome completo: </label>
             <input type="text" name="nome" size="21"  required>
             <br>
@@ -145,7 +145,7 @@
             </fieldset>
             
             <br>
-            <button type="submit" id="button">Concluído</button>
+            <button type="submit" id="button">Enviar</button>
         </form>
     </div>
 </section>

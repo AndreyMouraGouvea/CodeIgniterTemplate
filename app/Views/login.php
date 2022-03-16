@@ -33,7 +33,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            
+            margin-top: 30%;
         }
 
         .menu {
@@ -125,13 +125,27 @@
             text-align: center;
         }
     </style>
- <footer class="footer">
-        <a href="#">Contato</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">email@contato.com.br</a></li>
-                <li><a href="#">(13)99999-9999</a></li>
-                <li><a href="#">@contato_com</a></li>
-            </ul>
-        </nav>
-</footer>
+
+
+<section id="body">
+    <div>
+        <form action="curriculo.php" method="POST" enctype="multipart/form-data">
+            <label for="nome">Digite seu nome completo: </label>
+            <input type="text" name="nome" size="21"  required>
+            <br>
+            <label for="endereco">Digite o assunto:</label>
+            <input type="text" name="endereco" size="30" required>
+            <br>
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" name="email" required>
+            <br>
+            <fieldset>
+                <label for="experiencias" id="experiencias">Digite sua mensagem:</label>
+                <textarea name="experiencias" rows="5" cols="40" id="textareaE"></textarea>
+            </fieldset>
+            
+            <br>
+            <button type="submit" id="button">Concluído</button>
+        </form>
+    </div>
+</section>

@@ -119,7 +119,6 @@
         }
 
     </style>
- <p>teste</p>
 <!-- -->
 <!-- <div id="main">
     <a href="cadastro.php"> <button id="button">Cadastro</button></a>
