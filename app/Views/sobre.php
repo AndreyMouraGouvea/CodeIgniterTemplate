@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/5d7c26c4ce.js" crossorigin="anonymous"></script>
-    <!-- Top Icon -->
-    <!-- <i class="fa-solid fa-car-garage"></i> -->
-    <title>Loja de Veículos</title>
-    
-</head>
-
-<body>
-    <style>
+<style>
         body,
         ul,
         li,
@@ -90,13 +71,41 @@
         }
         #body {
             margin-top: 5%;
+            margin-left: 36%;
             font-family: 'Hubballi', cursive;
         } 
-        button{
+        #experiencias, #referencias, #objetivos, #formacoes{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            padding: 1px;
+           
+        }
+        #formacoes{
+            padding-top: 10px;
+        }
+        fieldset{
+            border: 0;
+            margin: 0;
+            padding: 10px;
+            margin-left: -0.9%;
+        }
+        #estadocivil{
+            margin-top: 10%;
+        }
+
+        input, select, textarea, button{
             border-radius: 5%;
             font-family: sans-serif;
             font-size: 1em;
             color: #59429d;
+        }
+        .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo input[type="radio"]{
+            padding: 0.2em;
+            border: 1px solid #59429d;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            display: block;
+
         }
         #button:hover{
             background: #ccbbff;
@@ -111,16 +120,10 @@
             margin-left: 8.5%;
             margin-top: 2%;
         }
-        #main{
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        #nome{
+            padding: 1px;
+            text-align: center;
         }
-
     </style>
- <p>teste</p>
-<!-- -->
-<!-- <div id="main">
-    <a href="cadastro.php"> <button id="button">Cadastro</button></a>
-</div> -->
+
+<h1>Sobre</h1>
