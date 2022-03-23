@@ -91,3 +91,14 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 ## Running CodeIgniter Tests
 
 Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
+
+# Conectar ao banco de dados
+#codeigniter4.github.io/userguide/dbmgmt
+localhost/phpmyadmin
+app>config>database
+app>Database
+- desligar php spark serve
+- rodar
+-  php spark migrate:create pessoas
+- pessoas.php
+localhost/phpmyadmin => banco de dados => utf8_general_ci
