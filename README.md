@@ -101,4 +101,6 @@ app>Database
 - rodar
 -  php spark migrate:create pessoas
 - pessoas.php
+- apos criar a table, rodar
+- php spark migrate
 localhost/phpmyadmin => banco de dados => utf8_general_ci
