@@ -108,3 +108,9 @@ localhost/phpmyadmin => banco de dados => utf8_general_ci
 criar nome banco de dados de acordo com nome anterior{0}
 
 # Criar seeds
+
+app>config>database>seeds
+- pessoas.php
+- codigo
+- rodar
+- php spark db:seed Pessoas
