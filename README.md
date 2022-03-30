@@ -96,6 +96,7 @@ Information on running the CodeIgniter test suite can be found in the [README.md
 #codeigniter4.github.io/userguide/dbmgmt
 localhost/phpmyadmin
 app>config>database
+definir nome do database{0}
 app>Database
 - desligar php spark serve
 - rodar
@@ -104,3 +105,6 @@ app>Database
 - apos criar a table, rodar
 - php spark migrate
 localhost/phpmyadmin => banco de dados => utf8_general_ci
+criar nome banco de dados de acordo com nome anterior{0}
+
+# Criar seeds
