@@ -95,6 +95,7 @@ Information on running the CodeIgniter test suite can be found in the [README.md
 # Conectar ao banco de dados
 #codeigniter4.github.io/userguide/dbmgmt
 localhost/phpmyadmin
+usuário=root senha=
 app>config>database
 definir nome do database{0}
 app>Database
