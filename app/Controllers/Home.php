@@ -39,4 +39,17 @@ class Home extends BaseController
         echo view ('cadastro-pessoas');
         echo view ('template/footer');
     }
+
+    public function gravar() {
+        $model = new PessoasModel();
+
+        $model->save([
+            'id' => $this->request->getVar('id'),
+            'nome' => $this->request->getVar('nome'),
+            'profissao' => $this->request->getVar('profissao'),
+            'idade' => $this->request->getVar('idade')
+        ]);
+
+        return redirect('pessoa');
+    }
 }

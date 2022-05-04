@@ -1,25 +1,27 @@
-<h1> <?=$title?> </h1>
+<div class="container-fluid">
 
-<table class="table">
-    <tr>
-        <td>Nome:</td>
-        <td>Profissão</td>
-        <td>Idade</td>
-    </tr>
-    <?php
+    <h1 class="mt-3"> <?= $title ?> </h1>
 
-    foreach($pessoas as $pessoa_item){
-    ?>
-    <tr>
-        <td><?=  $pessoa_item['nome']  ?></td>
-        <td><?=  $pessoa_item['profissao']  ?></td>
-        <td><?=  $pessoa_item['idade']  ?></td>
-    </tr>
+    <table class="table">
+        <tr>
+            <td>Nome:</td>
+            <td>Profissão</td>
+            <td>Idade</td>
+        </tr>
+        <?php
 
-    <?php
-    }   
+        foreach ($pessoas as $pessoa_item) {
+        ?>
+            <tr>
+                <td><?= $pessoa_item['nome']  ?></td>
+                <td><?= $pessoa_item['profissao']  ?></td>
+                <td><?= $pessoa_item['idade']  ?></td>
+            </tr>
 
-    ?>
+        <?php
+        }
 
-</table>
+        ?>
 
+    </table>
+</div>
