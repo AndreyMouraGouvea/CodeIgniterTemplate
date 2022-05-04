@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h2>Cadastro de Pessoas</h2>
+            <h2 class="mt-3">Cadastro de Pessoas</h2>
         </div>
     </div>
 
@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col">
                 <div class="form-group">
-                    <label for="">Nome: </label>
+                    <label for="" class="mt-1">Nome: </label>
                     <input type="text" class="form-control" name="nome">
                 </div>
             </div>

@@ -18,7 +18,7 @@
     <title>Loja de Veículos</title>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Loja de Carros</a>
+  <a class="navbar-brand" href="home">Loja de Carros</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
