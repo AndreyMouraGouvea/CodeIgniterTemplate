@@ -22,19 +22,21 @@ class Home extends BaseController
 
     }
 
-    public function pessoa() {
-        // instância => variavel para criar o objeto
-        // variavel para apontar o objeto $model
-        $model = new PessoaModel();
+    public function pessoas(){
+        $model = new PessoasModel();
 
         $data = [
             'title'=>'Pessoas',
-            'pessoas'=> $model->getPessoas()
+            'pessoas'=>$model->getPessoas()
         ];
-
         echo view('template/header');
-        echo view('pessoa');
+        echo view('pessoa',$data);
         echo view('template/footer');
+    }
 
+    public function cadastro() {
+        echo view ('template/header');
+        echo view ('cadastro-pessoas');
+        echo view ('template/footer');
     }
 }

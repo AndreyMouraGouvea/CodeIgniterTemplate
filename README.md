@@ -101,7 +101,8 @@ definir nome do database{0}
 app>Database
 - desligar php spark serve
 - rodar
--  php spark migrate:create pessoas
+- php spark migrate
+- php spark migrate:create pessoas
 - pessoas.php
 - apos criar a table, rodar
 - php spark migrate
