@@ -58,4 +58,17 @@ class Home extends BaseController
         $model->delete($id);
         return redirect('pessoa');
     }
+
+    public function editar($id = null) {
+        $model = new PessoasModel();
+        $data = [
+            'pessoa' => $model->getPessoa($id)
+        ];
+
+        echo view ('template/header');
+        echo view ('cadastro-pessoas', $data);
+        echo view ('template/footer');
+
+
+    }
 }
