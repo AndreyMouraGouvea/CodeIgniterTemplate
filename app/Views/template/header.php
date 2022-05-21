@@ -36,6 +36,9 @@
       <li class="nav-item">
         <a class="nav-link" href="cadastro-pessoas">Cadastro</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastro-veiculos">Cadastro de Veículos</a>
+      </li>
 
     </ul>
   </div>

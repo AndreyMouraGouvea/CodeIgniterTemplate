@@ -1,0 +1,25 @@
+CRITICAL - 2022-05-21 16:55:56 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\CodeIgniterTemplate\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\CodeIgniterTemplate\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-21 17:00:53 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\CodeIgniterTemplate\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\CodeIgniterTemplate\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-21 17:01:30 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\CodeIgniterTemplate\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\CodeIgniterTemplate\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-21 17:13:30 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\CodeIgniterTemplate\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\CodeIgniterTemplate\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\CodeIgniterTemplate\spark(45): require('C:\\xampp\\htdocs...')
+#4 {main}
+ERROR - 2022-05-21 10:19:36 --> Error connecting to the database: Unknown database 'teste'

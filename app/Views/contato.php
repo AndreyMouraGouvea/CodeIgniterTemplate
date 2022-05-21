@@ -1,138 +1,29 @@
-<style>
-        body,
-        ul,
-        li,
-        p {
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-            font-size: 1.2rem;
-            font-family: 'Hubballi', cursive;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .header {
-            /*espaço entre os itens */
-            /*tela pequena, flex-box vai para baixo*/
-            background-color: #7159c1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .footer {
-            background-color: #7159c1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            
-        }
-
-        .menu {
-            display: flex;
-
-        }
-
-        .menu li {
-            margin-left: 10px;
-
-        }
-
-        .menu li a {
-            /* para a não se mover */
-            display: block;
-            padding: 10px;
-        }
-        input{
-            margin-bottom: 5px;
-        }
-        #header{
-            margin-right: 5%;
-        }
-        h1{
-            margin-bottom: 10px;
-        }
-        body{
-            background-color: #f0f8ff;
-            font-size: 1.2em;
-            color: #59429d;
-            justify-content: center;
-            align-content: center;
-            font-family: 'Hubballi', cursive;
-            
-        }
-        #body {
-            margin-top: 5%;
-            margin-left: 36%;
-            font-family: 'Hubballi', cursive;
-        } 
-        #experiencias, #referencias, #objetivos, #formacoes{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            padding: 1px;
-           
-        }
-        #formacoes{
-            padding-top: 10px;
-        }
-        fieldset{
-            border: 0;
-            margin: 0;
-            padding: 10px;
-            margin-left: -0.9%;
-        }
-        #estadocivil{
-            margin-top: 10%;
-        }
-
-        input, select, textarea, button{
-            border-radius: 5%;
-            font-family: sans-serif;
-            font-size: 1em;
-            color: #59429d;
-        }
-        .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo input[type="radio"]{
-            padding: 0.2em;
-            border: 1px solid #59429d;
-            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-            display: block;
-
-        }
-        #button:hover{
-            background: #ccbbff;
-            box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-            text-shadow: none;
-        }
-
-        #button, select{
-            cursor: pointer;
-        }
-        #button{
-            margin-left: 8.5%;
-            margin-top: 2%;
-        }
-        #nome{
-            padding: 1px;
-            text-align: center;
-        }
-    </style>
- <footer class="footer">
-        <a href="#">Contato</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">email@contato.com.br</a></li>
-                <li><a href="#">(13)99999-9999</a></li>
-                <li><a href="#">@contato_com</a></li>
+<!-- <div class="container b d mt-5" id="link">
+        <div class="col">
+             <div class="row c">
+                <div class="col d">
+                    <h2>Links Oficiais</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">
+                     <ul class="list-group list-group-horizontal">
+                        <a class="nav-link active f" href="mailto:andreygouveia.05@gmail.com">Email</a>
+                        <a class="nav-link active f" href="tel:(13)99999-9999">Telefone</a>
+                        <a class="nav-link active f" href="https:/instagram.com/andrey_moura_gouvea" target="_new">Instagram</a>
+                    </ul> 
+                </div>                    
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="py-3 my-4">
+            <ul class="nav justify-content-center border  mb-3 p-2">
+                <li class="nav-item"><a href="mailto:andreygouveia.05@gmail.com" class="nav-link px-2 text-muted">Email • </a></li>
+                <li class="nav-item"><a href="tel:(13)99999-9999" class="nav-link px-2 text-muted">Telefone • </a></li>
+                <li class="nav-item"><a href="https:/instagram.com/andrey_moura_gouvea" target="_new" class="nav-link px-2 text-muted">Instagram </a></li>                
             </ul>
-        </nav>
-</footer>
-<!-- https://github.com/AndreyMouraGouvea/SiteResponsivoDev -->
+        </div>
+</div>
+
+ <!-- https://github.com/AndreyMouraGouvea/SiteResponsivoDev -->
