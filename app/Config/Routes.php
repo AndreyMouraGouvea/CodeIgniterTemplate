@@ -37,7 +37,13 @@ $routes->match(['get', 'post'],'excluir/(:num)', 'Home::excluir/$1');
 $routes->match(['get', 'post'],'editar/(:num)', 'Home::editar/$1');
 $routes->match(['get', 'post'],'gravar', 'Home::gravar');
 $routes->match(['get', 'post'],'editar/gravar', 'Home::gravar');
+$routes->match(['get', 'post'],'gravarCarros', 'Home::gravarCarros');
+$routes->match(['get', 'post'],'editar/gravar', 'Home::gravarCarros');
+$routes->match(['get', 'post'],'gravarMotos', 'Home::gravarMotos');
+$routes->match(['get', 'post'],'editar/gravar', 'Home::gravarMotos');
 $routes->get('pessoa', 'Home::pessoas');
+$routes->get('carro', 'Home::carros');
+$routes->get('moto', 'Home::motos');
 $routes->get('(:any)', 'Home::page/$1');
 
 /*
