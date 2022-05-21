@@ -1,128 +1,27 @@
-<style>
-        body,
-        ul,
-        li,
-        p {
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-            font-size: 1.2rem;
-            font-family: 'Hubballi', cursive;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .header {
-            /*espaço entre os itens */
-            /*tela pequena, flex-box vai para baixo*/
-            background-color: #7159c1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .footer {
-            background-color: #7159c1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            margin-top: 30%;
-        }
-
-        .menu {
-            display: flex;
-
-        }
-
-        .menu li {
-            margin-left: 10px;
-
-        }
-
-        .menu li a {
-            /* para a não se mover */
-            display: block;
-            padding: 10px;
-        }
-        input{
-            margin-bottom: 5px;
-        }
-        #header{
-            margin-right: 5%;
-        }
-        h1{
-            margin-bottom: 10px;
-        }
-        body{
-            background-color: #f0f8ff;
-            font-size: 1.2em;
-            color: #59429d;
-            justify-content: center;
-            align-content: center;
-            font-family: 'Hubballi', cursive;
-            
-        }
-        #body {
-            margin-top: 5%;
-            margin-left: 36%;
-            font-family: 'Hubballi', cursive;
-        } 
-        #experiencias, #referencias, #objetivos, #formacoes{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            padding: 1px;
-           
-        }
-        #formacoes{
-            padding-top: 10px;
-        }
-        fieldset{
-            border: 0;
-            margin: 0;
-            padding: 10px;
-            margin-left: -0.9%;
-        }
-        #estadocivil{
-            margin-top: 10%;
-        }
-
-        input, select, textarea, button{
-            border-radius: 5%;
-            font-family: sans-serif;
-            font-size: 1em;
-            color: #59429d;
-        }
-        .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo input[type="radio"]{
-            padding: 0.2em;
-            border: 1px solid #59429d;
-            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-            display: block;
-
-        }
-        #button:hover{
-            background: #ccbbff;
-            box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-            text-shadow: none;
-        }
-
-        #button, select{
-            cursor: pointer;
-        }
-        #button{
-            margin-left: 8.5%;
-            margin-top: 2%;
-        }
-        #nome{
-            padding: 1px;
-            text-align: center;
-        }
-    </style>
-<h1>Produto</h1>
+<div class="container b d" id="info">
+        <div class="col">
+            <div class="row mt-5">
+                <div class="col">
+                    <h2>Carros</h2>
+                    <div class="row">
+                        <ul>
+                            <li>Porsche Turbo S - 2022</li>
+                            <li>Mustang GT - 2020</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Motos</h2>
+                    <div class="row">
+                        <ul>
+                            <li>S1000RR - 2022</li>
+                            <li>Z1000 - 2020</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>    
+    </div><br>
