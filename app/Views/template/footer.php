@@ -9,7 +9,8 @@
                 <li class="nav-item"><a href="cadastro-veiculos" class="nav-link px-2 text-muted">Cadastro de Veículos • </a></li>                
                 <li class="nav-item"><a href="cadastro-motos" class="nav-link px-2 text-muted">Cadastro de Motos • </a></li>                
             </ul>
-            <p class="text-center text-muted">Loja de Carros | <a href="https://github.com/AndreyMouraGouvea" target="_new">Andrey Moura Gouvêa©</a> 2022</p>
+            <p class="text-center text-muted">Loja de Carros | <a href="https://github.com/AndreyMouraGouvea" target="_new">Andrey Moura Gouvêa©</a> &
+            <a href="https://github.com/cristhoferChow" target="_new">Cristhofer Yiang Chow©</a> 2022</p>
         </footer>
 </div>
 </body>
