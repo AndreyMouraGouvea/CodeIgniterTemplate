@@ -10,8 +10,8 @@
             <div class="col">
                 <div class="form-group">
                     <label for="" class="mt-1">Modelo: </label>
-                    <input type="text" class="form-control" name="nome"
-                    value="<?= isset($pessoa['nome']) ? $pessoa['nome'] : "" ?>">
+                    <input type="text" class="form-control" name="modelo"
+                    value="<?= isset($moto['modelo']) ? $moto['modelo'] : "" ?>">
                 </div>
             </div>
         </div>
@@ -19,28 +19,28 @@
             <div class="col">
                 <div class="form-group">
                     <label for="">Marca: </label>
-                    <input type="text" class="form-control" name="profissao"
-                    value="<?= isset($pessoa['profissao']) ? $pessoa['profissao'] : "" ?>">
+                    <input type="text" class="form-control" name="marca"
+                    value="<?= isset($moto['marca']) ? $moto['marca'] : "" ?>">
                 </div>
             </div>
             <div class="col">
                 <div class="form-group">
                     <label for="">Cor: </label>
-                    <input type="text" class="form-control" name="idade"
-                    value="<?= isset($pessoa['idade']) ? $pessoa['idade'] : "" ?>">
+                    <input type="text" class="form-control" name="cor"
+                    value="<?= isset($moto['cor']) ? $moto['cor'] : "" ?>">
                 </div>
             </div>
             <div class="col">
                 <div class="form-group">
                     <label for="">Placa: </label>
-                    <input type="text" class="form-control" name="idade"
-                    value="<?= isset($pessoa['idade']) ? $pessoa['idade'] : "" ?>">
+                    <input type="text" class="form-control" name="placa"
+                    value="<?= isset($moto['placa']) ? $moto['placa'] : "" ?>">
                 </div>
             </div>
         </div>
     </div>
         <input type="hidden" name="id"
-        value="<?= isset($pessoa['id']) ? $pessoa['id'] : "" ?>">
+        value="<?= isset($moto['id']) ? $moto['id'] : "" ?>">
         <div class="row">
             <div class="col-6 offset-3">
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
