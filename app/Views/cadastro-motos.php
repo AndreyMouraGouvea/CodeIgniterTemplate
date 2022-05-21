@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h2 class="mt-3">Cadastro de Veículos</h2>
+            <h2 class="mt-3">Cadastro de Motos</h2>
         </div>
     </div>
 

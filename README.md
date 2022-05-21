@@ -116,3 +116,10 @@ app>config>database>seeds
 - codigo
 - rodar
 - php spark db:seed Pessoas
+
+# Atualizações
+
+- php spark migrate (rodar migrations de pessoas, carros e motos)
+- php spark db:seed Pessoas
+- php spark db:seed Carros
+- php spark db:seed Motos
