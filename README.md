@@ -123,3 +123,12 @@ app>config>database>seeds
 - php spark db:seed Pessoas
 - php spark db:seed Carros
 - php spark db:seed Motos
+
+# Alterar tabela do banco
+
+-  realizar alterações em app>config>database>migrations...
+-  php spark migrate:refresh
+-  criar seeds de novo
+- php spark db:seed Pessoas
+- php spark db:seed Carros
+- php spark db:seed Motos

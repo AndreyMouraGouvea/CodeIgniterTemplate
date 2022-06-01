@@ -25,6 +25,9 @@ class Pessoas extends Migration
                 'type'=>'int',
 
             ],
+            'senha'=>[
+                'type'=>'text'
+            ]
 
         ]);
         $this->forge->addKey('id', true);

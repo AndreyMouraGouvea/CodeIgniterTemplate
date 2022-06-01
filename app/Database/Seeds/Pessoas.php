@@ -14,7 +14,8 @@ class Pessoas extends Seeder
             $data = [
                 'nome' => $nome[$x],
                 'profissao' => 'PROGRAMADOR',
-                'idade' => 20
+                'idade' => 20,
+                'senha'=>MD5('123')
             ];
             $this->db->table('tb_pessoas')->insert($data);
             
