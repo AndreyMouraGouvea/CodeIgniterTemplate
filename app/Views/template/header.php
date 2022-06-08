@@ -33,15 +33,37 @@
         <a class="nav-link" href="contato" style="color: #FFF">Contato</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="login" style="color: #FFF">Login</a>
+      </li>   
+      <?php
+      $session = \Config\Services::session();
+        if($session->get('logado')) {
+          
+      ?>
+      <li class="nav-item">
+        <a class="nav-link" href="sair" style="color: #FFF">Sair</a>
+      </li>   
+      <li class="nav-item">
         <a class="nav-link" href="cadastro-pessoas" style="color: #FFF">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pessoa" style="color: #FFF">Listar Cadastros Pessoas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="cadastro-veiculos" style="color: #FFF">Cadastro de Carros</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="carro" style="color: #FFF">Listar Cadastros Carros</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="cadastro-motos" style="color: #FFF">Cadastro de Motos</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="moto" style="color: #FFF">Listar Cadastros Motos</a>
+      </li>
+        <?php
+          }
+        ?>
     </ul>
   </div>
 </nav>

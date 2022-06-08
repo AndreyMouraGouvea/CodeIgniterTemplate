@@ -29,8 +29,14 @@ class Home extends BaseController
 
         $data = [
             'title'=>'Pessoas',
-            'pessoas'=>$model->getPessoas()
+            'pessoas'=>$model->getPessoas(),
+            'session' => \Config\Services::session()
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         echo view('template/header');
         echo view('pessoa',$data);
         echo view('template/footer');
@@ -49,11 +55,17 @@ class Home extends BaseController
         $nome = $this->request->getVar('nome');
 
         $data['usuario'] = $model->userLogin($nome, $senha);
+        $data['session'] = \Config\Services::session();
 
         if(empty($data['usuario'])) {
             return redirect('login');
         } 
         else {
+            $sessionData = [
+                'usuario' => $nome,
+                'logado' => true
+            ];
+            $data['session']->set($sessionData);
             return redirect('pessoa');
         }
     }
@@ -63,8 +75,14 @@ class Home extends BaseController
 
         $data = [
             'title'=>'Carros',
-            'carros'=>$model->getCarros()
+            'carros'=>$model->getCarros(),
+            'session' => \Config\Services::session()
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         echo view('template/header');
         echo view('carro',$data);
         echo view('template/footer');
@@ -75,8 +93,14 @@ class Home extends BaseController
 
         $data = [
             'title'=>'Motos',
-            'motos'=>$model->getMotos()
+            'motos'=>$model->getMotos(),
+            'session' => \Config\Services::session()
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         echo view('template/header');
         echo view('moto',$data);
         echo view('template/footer');
@@ -84,17 +108,36 @@ class Home extends BaseController
 
 
     public function cadastro() {
+
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         echo view ('template/header');
         echo view ('cadastro-pessoas');
         echo view ('template/footer');
     }
 
     public function cadastroCarros() {
+
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
         echo view ('template/header');
         echo view ('cadastro-veiculos');
         echo view ('template/footer');
     }
     public function cadastroMotos() {
+
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
         echo view ('template/header');
         echo view ('cadastro-motos');
         echo view ('template/footer');
@@ -145,18 +188,36 @@ class Home extends BaseController
 
 
     public function excluir($id = null) {
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         $model = new PessoasModel();
         $model->delete($id);
         return redirect('pessoa');
     }
 
     public function excluirCarros($id = null) {
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         $model = new CarrosModel();
         $model->delete($id);
         return redirect('carro');
     }
 
     public function excluirMotos($id = null) {
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         $model = new MotosModel();
         $model->delete($id);
         return redirect('moto');
@@ -165,8 +226,13 @@ class Home extends BaseController
     public function editar($id = null) {
         $model = new PessoasModel();
         $data = [
-            'pessoa' => $model->getPessoa($id)
+            'pessoa' => $model->getPessoa($id),
+            'session'=> \Config\Services::session()
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
 
         echo view ('template/header');
         echo view ('cadastro-pessoas', $data);
@@ -193,5 +259,11 @@ class Home extends BaseController
         echo view ('template/header');
         echo view ('cadastro-motos', $data);
         echo view ('template/footer');
+    }
+
+    public function sair() {
+        $data['session'] =  \Config\Services::session();
+        $data['session']->destroy();
+        return redirect('login');
     }
 }

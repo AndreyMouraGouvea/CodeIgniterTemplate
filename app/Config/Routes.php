@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::page');
 $routes->match(['get', 'post'],'cadastro', 'Home::cadastro');
 $routes->match(['get', 'post'],'logar', 'Home::logar');
+$routes->match(['get', 'post'],'sair', 'Home::sair');
 $routes->match(['get', 'post'],'login', 'Home::login');
 $routes->match(['get', 'post'],'excluir/(:num)', 'Home::excluir/$1');
 $routes->match(['get', 'post'],'editar/(:num)', 'Home::editar/$1');

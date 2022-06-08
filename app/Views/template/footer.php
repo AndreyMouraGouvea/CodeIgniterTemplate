@@ -5,6 +5,7 @@
                 <li class="nav-item"><a href="sobre" class="nav-link px-2 text-muted">Sobre • </a></li>
                 <li class="nav-item"><a href="produto" class="nav-link px-2 text-muted">Produtos • </a></li>
                 <li class="nav-item"><a href="contato" class="nav-link px-2 text-muted">Contato • </a></li>
+                <li class="nav-item"><a href="login" class="nav-link px-2 text-muted">Login • </a></li>
                 <li class="nav-item"><a href="cadastro" class="nav-link px-2 text-muted">Cadastro • </a></li>                
                 <li class="nav-item"><a href="cadastro-veiculos" class="nav-link px-2 text-muted">Cadastro de Veículos • </a></li>                
                 <li class="nav-item"><a href="cadastro-motos" class="nav-link px-2 text-muted">Cadastro de Motos • </a></li>                
