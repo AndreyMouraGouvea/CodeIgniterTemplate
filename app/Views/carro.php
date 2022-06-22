@@ -20,8 +20,8 @@
                 <td><?= $carro_item['marca']  ?></td>
                 <td><?= $carro_item['cor']  ?></td>
                 <td><?= $carro_item['placa']  ?></td>
-                <td> <a href="excluir/<?=$carro_item['id']?>" class="btn btn-danger">Apagar </a></td>
-                <td> <a href="editar/<?=$carro_item['id']?>" class="btn btn-warning">Editar</a></td>
+                <td> <a href="excluir/carro/<?=$carro_item['id']?>" class="btn btn-danger">Apagar </a></td>
+                <td> <a href="editar/carro/<?=$carro_item['id']?>" class="btn btn-warning">Editar</a></td>
             </tr>
 
         <?php
